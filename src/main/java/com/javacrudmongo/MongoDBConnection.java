@@ -10,7 +10,7 @@ public class MongoDBConnection {
     private MongoClient mongoClient;
 
     private MongoDBConnection() {
-        String database = "mongodb://rootuser:rootpass@localhost:27017/?authMechanism=DEFAULT";
+        String database = "mongodb://rootuser:rootpass@localhost:27017/";
         ConnectionString connectionString = new ConnectionString(database);
         mongoClient = MongoClients.create(connectionString);
     }
